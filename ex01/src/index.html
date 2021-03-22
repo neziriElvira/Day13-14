@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="import" href="image01.html">
+
+    <title>Gallery's page</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column">
+            <img id="thumbinails1" class="thumbinails"
+                onmouseover="document.getElementByClassId('section1').style.display='block'" src="../images/img1.jpg"
+                alt="Marathon" />
+            <div id="section1" class="sectionName">
+                <h1 onclick="openModal('image01.html')">Marathon</h1>
+            </div>
+            <div>
+                <img id="thumbinails5" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section2').style.display='block'"
+                    src="../images/img5.jpg" alt="Marathon" />
+                <div id="section2" class="sectionName">
+                    <h1 onclick="openModal('image05.html')">Weight Lifting</h1>
+                </div>
+            </div>
+            <div>
+                <img id="thumbinails8" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section3').style.display='block'"
+                    src="../images/img8.jpg" alt="weight lifting" />
+                <div id="section3" class="sectionName">
+                    <h1 onclick="openModal('image08.html')">Weight Lifting</h1>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <img id="thumbinails2" class="thumbinails"
+                onmouseover="document.getElementByClassId('section1').style.display='block'" src="../images/img2.jpg"
+                alt="Marathon" />
+            <div id="section4" class="sectionName">
+                <h1 onclick="openModal('image02.html')">Gymnastics</h1>
+            </div>
+            <div>
+                <img id="thumbinails6" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section6').style.display='block'"
+                    src="../images/img6.jpg" alt="Marathon" />
+                <div id="section5" class="sectionName">
+                    <h1 onclick="openModal('image06.html')">Basketball</h1>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <img id="thumbinails3" class="thumbinails"
+                onmouseover="document.getElementByClassId('section6').style.display='block'" src="../images/img3.jpg"
+                alt="Marathon" />
+            <div id="section6" class="sectionName">
+                <h1 onclick="openModal('image03.html')">Marathon</h1>
+            </div>
+            <div>
+                <img id="thumbinails7" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section7').style.display='block'"
+                    src="../images/img7.jpg" alt="Marathon" />
+                <div id="section7" class="sectionName">
+                    <h1 onclick="openModal('image07.html')">Weight Lifting</h1>
+                </div>
+            </div>
+            <div>
+                <img id="thumbinails9" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section8').style.display='block'"
+                    src="../images/img9.jpg" alt="weight lifting" />
+                <div id="section8" class="sectionName">
+                    <h1 onclick="openModal('image09.html')">Weight Lifting</h1>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <img id="thumbinails4" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section9').style.display='block'"
+                    src="../images/img4.jpg" alt="Marathon" />
+                <div id="section9" class="sectionName">
+                    <h1 onclick="openModal('image04.html')">Weight Lifting</h1>
+                </div>
+            </div>
+            <div>
+                <img id="thumbinails10" class="thumbinails"
+                    onmouseover="document.getElementByClassId('section10').style.display='block'"
+                    src="../images/img10.jpg" alt="weight lifting" />
+                <div id="section10" class="sectionName">
+                    <h1 onclick="openModal('image10.html')">Weight Lifting</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <button id="closeX" onclick="closeModal()">&times;</button>
+        <iframe id="modalContent"></iframe>
+    </div>
+
+
+    <script src="../scripts/index.js"></script>
+</body>
+
+</html>
